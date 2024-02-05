@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Year Greetings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            gap: 20px;
+            background-color: #f0f0f0;
+        }
+        .greeting {
+            background-color: #fff3e0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="greeting" id="greeting1">Chúc mừng năm mới</div>
+    <div class="greeting" id="greeting2">Tết Giáp Thìn 2024</div>
+    <div class="greeting" id="greeting3">Lên mây thành công - Năm rồng hồng phát</div>
+
+    <script>
+        // Function to display greetings
+        function displayGreetings() {
+            const greetings = [
+                "Chúc mừng năm mới",
+                "Tết Giáp Thìn 2024",
+                "Lên mây thành công - Năm rồng hồng phát"
+            ];
+
+            document.getElementById('greeting1').textContent = greetings[0];
+            document.getElementById('greeting2').textContent = greetings[1];
+            document.getElementById('greeting3').textContent = greetings[2];
+        }
+
+        // Call the function to display the greetings when the page loads
+        window.onload = displayGreetings;
+    </script>
+</body>
+</html>
